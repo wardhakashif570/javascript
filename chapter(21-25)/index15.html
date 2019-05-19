@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a=prompt("enter a valid password it should contain alphabets and numbers ,it should not start with number and least 6 character long");
+    for(i=0;i<a.length;i++)
+    a=string.codeCharAt(i);
+ {   
+    if((a>65 || a<90) && (a>97 || a<122) && (a>48 || a<57) && a.slice(0,1)>48 || a.slice(0,1)<57 && a.length>6)
+    {
+      document.write("password is valid");
+    } 
+    else{
+        document.write("please enter a valid password");
+    }   
+}  
+    </script>
+</body>
+</html>

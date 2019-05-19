@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+  function Area(a,b,c)
+  {
+   var area;
+   area= (cal(a,b,c) * (cal(a,b,c) - a) * (cal(a,b,c) - b) * (cal(a,b,c) -c));
+    document.write("area is " + area);  
+  }
+function cal(a,b,c)
+{
+ var S= ((a + b + c)/2);
+ return S;
+}
+
+cal(2,3,4);
+Area(2,3,4);
+ </script>   
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        th {
+            background-color: wheat;
+        }
+
+        table td {
+
+            padding: 20px;
+            /* display: flex; */
+            border-collapse: collapse;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            background-color: azure;
+
+        }
+
+        span {
+            font-weight: bold;
+            background-color: skyblue;
+            color: aqua;
+            /* font-family: serif; */
+        }
+
+        .numm {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        // alert("6. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & computegrade as per following table:");
+        var studNam = prompt ("Please enter your Full name: ", "Wardha Kashif");
+        var mathSubject = Number (prompt ("Enter math marks", " Number not be greater then 100 "));
+        var urduSubject = Number (prompt ("Enter urdu total marks ", " Number not be greater then 100 "));
+        var engSubject = Number (prompt ("Enter english marks ", " Number not be greater then 100 "));
+        var obtainedMark = mathSubject + urduSubject + engSubject;
+        var totalMark = 300;
+        document.write("Total Mark Of three Subjects is: " + totalMark + " <br>");
+        document.write("Obtained marks in three subject are: " + obtainedMark + "<br>")
+        document.write("<span> Student Name:  " + studNam + "</span>");
+
+        var percentagee = obtainedMark / totalMark * 100;
+        if (percentagee >= 80) {
+            var Grade = "Grade : A-One ";
+            if (percentagee >= 80) {
+                var remarks = ("Excellent");
+            }
+        }
+
+        else if (percentagee >= 70 && percentagee < 80) {
+            Grade = "Grade : A ";
+            if (percentagee >= 70 && percentagee < 80) {
+                remarks = ("Good");
+            }
+        }
+        else if (percentagee >= 60 && percentagee < 70) {
+            Grade = "Grade : B ";
+            if (percentagee >= 60 && percentagee < 70) {
+                remarks = ("You Need to improve ");
+            }
+        }
+
+        else if (percentagee < 60) {
+            Grade = "Fail";
+            if (percentagee < 60) {
+                remarks = ("Sorry ! You Have failed ");
+            }
+        }
+        document.write("<br><table> <tr><th>Subject </th><th> Total Marks</th><th> Obtained Marks</th></tr><tr><td>Math</td><td class=\"numm\">100</td><td class=\"numm\">" + mathSubject + "</td></tr><tr><td>Urud</td><td class=\"numm\">100</td><td class=\"numm\">" + urduSubject + " </td></tr><tr><td> English</td><td class=\"numm\">100</td><td class=\"numm\">" + engSubject + "</td class=\"numm\"></tr ><tr></tr> <tr><td>Total</td><td class=\"numm\">" + totalMark + "</td><td class=\"numm\">" + obtainedMark + "</tr><tr><td class=\"numm\" colspan=\"3\">" + "Percentage : " + percentagee + " % " + "</td></tr><tr><td class=\"numm\" colspan =\"3\">" + Grade + "</td></tr><tr><td class=\"numm\" colspan =\"3\">" + "Remarks : " + remarks + "</td></tr></table>");
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    USER MESSAGE :<input type="text" id="USER"/>
+    <button onclick="encrypt()">ENCRYPT</button>
+    <button onclick="decrypt()">DECRYPT</button>
+    <div id="result"></div>
+    <div id="output"></div>
+    <script>
+        function encrypt()
+        {
+        var textrow=document.getElementById("USER").value;
+        var index="";
+        for(i=0;i<textrow.length;i++)
+        {
+        index+=enc(textrow[i]);
+        
+        }
+        document.getElementById("result").innerHTML=index;
+        }
+        function enc(x)
+        {
+            switch(x)
+            {
+                case "a":
+                return "z";
+                break;
+                case "b":
+                return "y";
+                break;
+                case "c":
+                return "x";
+                break;
+                case "d":
+                return "w";
+                break;
+                case "e":
+                return "v";
+                break;
+                case "f":
+                return "u";
+                break;
+                case "g":
+                return "t";
+                break;
+                case "h":
+                return "s";
+                break;
+                case "i":
+                return "r";
+                break;
+                case "j":
+                return "q";
+                break;
+                case "k":
+                return "p";
+                break;
+                case "l":
+                return "o";
+                break;
+                case "m":
+                return "n";
+                break;
+                case "n":
+                return "m";
+                break;
+                case "o":
+                return "l";
+                break;
+                case "p":
+                return "k";
+                break;
+                case "q":
+                return "j";
+                break;
+                case "r":
+                return "i";
+                break;
+                case "s":
+                return "h";
+                break;
+                case "t":
+                return "g";
+                break;
+                case "u":
+                return "f";
+                break;
+                case "v":
+                return "e";
+                break;
+                case "w":
+                return "d";
+                break;
+                case "x":
+                return "c";
+                break;
+                case "y":
+                return "b";
+                break;
+                case "z":
+                return "a";
+                break;
+                case "a":
+                return "z";
+                break;
+                default:
+                return "_"
+            }
+        }
+        function decrypt()
+        {
+        var textrow=document.getElementById("USER").value;
+        var index="";
+        for(i=0;i<textrow.length;i++)
+        {
+        index+=dec(textrow[i]);
+        
+        }
+        document.getElementById("output").innerHTML=index;
+        }
+        function dec(x)
+        {
+            switch(x)
+            {
+                case "z":
+                return "a";
+                break;
+                case "y":
+                return "b";
+                break;
+                case "x":
+                return "c";
+                break;
+                case "w":
+                return "d";
+                break;
+                case "v":
+                return "e";
+                break;
+                case "u":
+                return "f";
+                break;
+                case "t":
+                return "g";
+                break;
+                case "s":
+                return "h";
+                break;
+                case "r":
+                return "i";
+                break;
+                case "q":
+                return "j";
+                break;
+                case "p":
+                return "k";
+                break;
+                case "o":
+                return "l";
+                break;
+                case "n":
+                return "m";
+                break;
+                case "m":
+                return "n";
+                break;
+                case "l":
+                return "o";
+                break;
+                case "k":
+                return "p";
+                break;
+                case "j":
+                return "q";
+                break;
+                case "i":
+                return "r";
+                break;
+                case "h":
+                return "s";
+                break;
+                case "g":
+                return "t";
+                break;
+                case "f":
+                return "u";
+                break;
+                case "e":
+                return "v";
+                break;
+                case "d":
+                return "w";
+                break;
+                case "c":
+                return "x";
+                break;
+                case "b":
+                return "y";
+                break;
+                case "a":
+                return "z";
+                break;
+                case "z":
+                return "a";
+                break;
+                default:
+                return ""
+            }
+        }
+    </script>
+</body>
+</html>

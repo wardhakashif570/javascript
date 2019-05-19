@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+   var a=new Date();
+   var b=a.getDate();
+   if(b<16) 
+   { document.write("First fifteen days of a month <br>");
+     for(i=1;i<=15;i++)
+     {
+      
+      document.write(i + "<br>"); 
+     }
+   }
+   else
+   { document.write("last fifteen days of a month");
+    for(i=16;i<=31;i++)
+     {
+      
+      document.write(i + "<br>"); 
+     }  
+   }
+
+
+  </script>  
+</body>
+</html>

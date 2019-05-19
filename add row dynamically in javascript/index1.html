@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     
+</head>
+
+<body>
+    <fieldset>
+        <legend>student detalis</legend>
+        <form>
+            <table>
+                <tr>
+                    <td>NAME</td>
+                    <td><input type="text" name="fname"  id="fname" /></td>
+                </tr>
+
+                <tr>
+
+                    <td>AGE</td>
+                    <td><input type="number" name="age" id="age"  /></td>
+                </tr>
+                <tr>
+                    <td>GENDER</td>
+                    <td><input type="text" name="gender" id="gender" /></td>
+                </tr>
+                <tr>
+                 <td>QUALIFICATION</td>
+                    <td><input type="text" name="qualification" id="qualification"  /></td>
+                </tr>
+
+            </table>
+        </form>
+    </fieldset><br><br> 
+    
+    <button onClick="Addrow();">ADD</button>
+    <button onClick="ClearForm();">Clear</button>
+    <br><br>
+
+
+
+    <table border = " 1" id="my_table">
+        <tr>
+
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>QUALIFICATION</th>
+
+
+        </tr>
+
+        <tr>
+            <td>wardha</td>
+            <td>20</td>
+            <td>female</td>
+            <td>undergraduate</td>
+
+        </tr>
+        <tr>
+            <td>mustafa</td>
+            <td>13</td>
+            <td>male</td>
+            <td>student</td>
+
+        </tr>
+        <tr>
+            <td>asma</td>
+            <td>34</td>
+            <td>female</td>
+            <td>intermediate</td>
+
+        </tr>
+    </table>
+
+
+    <script>
+        var na="";
+        var age="";
+        var gen="";
+        var qua="";
+
+        function ClearForm() {
+
+            document.getElementById("fname").value = "";
+            document.getElementById("age").value = "";
+            document.getElementById("gender").value = "";
+            document.getElementById("qualification").value = "";
+        }
+
+        function Addrow() {
+        debugger;
+        var na = document.getElementById("fname").value;
+        var ag = document.getElementById("age").value;
+        var gen = document.getElementById("gender").value;
+        var qua = document.getElementById("qualification").value;
+        var table = document.getElementById("my_table");
+        var row = document.createElement("tr");
+        var n = document.createElement("td");
+        var a = document.createElement("td");
+        var g = document.createElement("td");
+        var q = document.createElement("td");
+        n.innerHTML = na;
+        a.innerHTML = ag;
+        g.innerHTML = gen;
+        q.innerHTML = qua;
+        row.appendChild(n);
+        row.appendChild(a);
+        row.appendChild(g);
+        row.appendChild(q);
+        table.appendChild(row);
+        ClearForm();
+    }
+
+    </script>
+
+</body>
+
+</html>

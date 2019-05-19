@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+     function calculate(a,b,c)
+    {
+     if(c=="+")
+    document.write("Sum is " + (a+b));
+    else if (c=="-")
+    document.write("Subtraction is " + (a-b));
+    else if (c=="*")
+    document.write("Mulyipliction is " + (a*b));
+    else if (c=="/")
+    document.write("division is " + (a-b));
+    else 
+    document.write("remainder is " + (a%b));
+}
+
+var e=Number(prompt("Enter first no"));
+var f=Number(prompt("Enter second no"));
+var g=prompt("operaor +,-,*,/,%");
+calculate(e,f,g);
+
+
+
+
+
+ </script>
+</body>
+</html>

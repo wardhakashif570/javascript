@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+
+// function Count(a)
+// { 
+//  var count=0; b=0;
+//  for(i=0; i<str.length;i++)
+//  {
+//   b=a.indexOf("a", b + 1);
+//   if(b === -1)
+//   {
+//       break;
+//   }
+//   else
+//   {
+//       count++;
+//   }
+  
+//   //document.write("the letter " + ch + "appear " + a + " time");
+//   document.write("total count is " + count);
+// }
+// Count("warda is a good girl");
+function char_count(str, letter) 
+{
+ var letter_Count = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) 
+      {
+      letter_Count += 1;
+      }
+  }
+  return letter_Count;
+}
+
+var a=char_count('www.wardo.com', 'o');
+document.write("Count is " + a);
+
+ </script>   
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+//   var a =prompt("Enter a string");
+//   var a=a.split("");
+//   var a=a.reverse();
+//   var a=a.join("");
+//   document.write("it is palindrome" + a);
+// //   for(i=0;i< a.length();i++)
+//   {
+//       if(a==b)
+//       {
+//       document.write("it is palindrome");
+//       }
+//       else
+//       {
+//       document.write(" it is  not a palindrome");
+
+//       }
+function palindrome(str) 
+{
+    var palin = str.split("").reverse().join("");
+
+    if (palin === str)
+    { 
+        document.write("it is palindrome");
+        return true;
+    } else {
+        document.write(" it is  not a palindrome");
+        return false;
+    }
+}
+palindrome("warda");
+  </script>
+
+</body>
+</html>

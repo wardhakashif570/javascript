@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+     var a=[50,40,30,20,10];
+      var c;
+    //  for(i=0;i<4;i++)
+    //  {
+    //    if(a[i]<a[i+1])
+    //    {
+    //        b[i]=a[i];
+    //        a[i+1]=a[i];
+    //    }
+    //    else{
+    //        b[i]=a[i+1];
+    //    }
+    //  }
+    //  document.write("ASCENDING ORDER IS <br>");
+    //  for(i=0;i<b.length;i++)
+    //  {
+    //    document.write(b[i] + "<br/>");
+    //  }
+    for (i = 0; i < a.length; ++i) 
+        {
+ 
+            for (j = i + 1; j < a.length; ++j)
+            {
+ 
+                if (a[i] > a[j]) 
+                {
+ 
+                    c = a[i];
+                    a[i] = a[j];
+                    a[j] = c;
+                }
+            }
+        }
+      document.write("ASCENDING ORDER IS <br>");
+      for(i=0;i<a.length;i++)
+     {
+        document.write(a[i] + "<br/>");
+     }
+        
+ </script> 
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+ var a=Number(prompt("Enter the base of a right triangle"));
+ var b=Number(prompt("Enter the perpendicular  of a right triangle"));
+ function  calculateHypotenuse(a,b)
+ {
+     function calculateSquare(a)
+     {
+         var b= a * a;
+         return b;
+     }
+     var hypotenuse;
+     hypotenuse=calculateSquare(a) + calculateSquare(b);
+     document.write("Hypotenuse of a right angle triangle is " + hypotenuse);
+     
+ }
+calculateHypotenuse(a,b);
+  </script>
+ </body>
+</html>
